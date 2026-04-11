@@ -1,0 +1,28 @@
+cabal-version: 3.6
+
+-- Created : 11 April 2026
+
+name:
+  cabal-test-main
+version:
+  0.1
+
+build-type:
+  Simple
+
+common ghc-options
+  default-language:
+    GHC2024
+  ghc-options:
+    -Wall
+
+executable main
+  import: ghc-options
+  main-is:
+    ExeMain.hs
+  build-depends:
+    , base >= 4.16
+    , cabal-test-dependency
+  ghc-options:
+    -rtsopts
+    -main-is ExeMain

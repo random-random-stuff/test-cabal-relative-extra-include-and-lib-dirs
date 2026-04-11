@@ -1,0 +1,3 @@
+packages:
+  cabal-test-main.cabal
+  ../dependency/cabal-test-dependency.cabal

@@ -1,0 +1,28 @@
+cabal-version: 3.6
+
+-- Created : 11 April 2026
+
+name:
+  cabal-test-dependency
+version:
+  0.1
+
+build-type:
+  Simple
+
+common ghc-options
+  default-language:
+    GHC2024
+  ghc-options:
+    -Wall
+
+library
+  import: ghc-options
+  exposed-modules:
+    Foo
+  build-depends:
+    , base >= 4.16
+  includes:
+    cabal_test_foo.h
+  extra-libraries:
+    cabal_test_foo
