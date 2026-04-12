@@ -1,3 +1,6 @@
 packages:
   cabal-test-main.cabal
   ../dependency/cabal-test-dependency.cabal
+
+extra-include-dirs: deps
+extra-lib-dirs: deps
