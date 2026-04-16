@@ -2,5 +2,7 @@ packages:
   cabal-test-main.cabal
   ../dependency/cabal-test-dependency.cabal
 
-extra-include-dirs: deps
-extra-lib-dirs: deps
+-- extra-include-dirs: deps
+-- extra-lib-dirs: deps
+
+import: project-config/test.config
